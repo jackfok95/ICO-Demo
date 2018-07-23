@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ICO Demo </title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <div class="detail">
+    <span class="crowd_add" >Crowdsale Address: <span id="crowd"></span> </span>
+    <span class="hint">Current Account: <span id="ac"></span> </span>
+    <span >(<span id="iou"></span> Token)</span>
+  </div>
+  <div id="whitelist"></div>
+  <div class="content">
+    <div class="raised"><h1>Raised Fund: <span class="black"><span id="fund"></span> ETH</span></h1></div>
+
+    <br>
+    <h1>WhiteList</h1>
+    <br><label for="address">address:</label><input type="text" id="user_address" ></input>
+    <br><br><button id="send" onclick="App.pre_whiteList()">Gett Whitelisted</button>
+    <button id="send" onclick="App.whiteList()">Whitelist all proposed address</button>
+    <br><br>
+    <span id="status"></span>
+    <br>
+
+    <br>
+    <h1>Contribute</h1>
+    <br><label for="amount">Amount:</label><input type="text" id="amount"></input>
+    <br><label for="receiver">To Address:</label><input type="text" id="receiver"></input>
+    <br><br><button id="send" onclick="App.sendCoin()">Contribute</button>
+    <br><br>
+    <span id="status"></span>
+    <br>
+
+    <br>
+    <h1>Take Contributes</h1>
+    <br><label for="amount">Amount:</label><input type="text" id="amount2"></input>
+    <br><br><button id="send" onclick="App.takeSome()">Take Some</button>
+    <button id="send" onclick="App.takeAll()">Take All</button>
+    <br><br>
+    <span id="status"></span>
+    <br>
+
+
+    <br>
+    <h1>Mint</h1>
+    <button id="send" onclick="App.mint()">Mint Token</button>
+    <br><br>
+    <span id="status"></span>
+    <br>
+
+
+  </div>
+</body>
+</html>
